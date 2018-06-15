@@ -4,6 +4,11 @@ body, html {
   height: 100%;
 }
 
+#button {
+  display: flex;
+  justify-content: center;
+}
+
 .active {
   color: pink;
 }

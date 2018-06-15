@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-do
 import React from 'react';
 import Controls from '../containers/controls';
 import Counter from '../containers/counter';
+import CreateButton from './create';
 import '../style.scss';
 
 const FallBack = (props) => {
@@ -9,7 +10,12 @@ const FallBack = (props) => {
 };
 
 const About = (props) => {
-  return <div> All there is to know about me </div>;
+  return (
+    <div>
+      <p>Click the button below to generate a checkup</p>
+      <CreateButton />
+    </div>
+  );
 };
 
 const Welcome = (props) => {
